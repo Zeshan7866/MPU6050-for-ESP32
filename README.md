@@ -32,7 +32,9 @@ set(EXTRA_COMPONENT_DIRS "/path/to/MPU6050-ESP32")
 ### 2. Diagram
 
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2020/12/MPU6050_ESP32_Wiring-Schematic-Diagram.png?w=726&quality=100&strip=all&ssl=1))
- 
+
+### 3.  I2C Address
+The default I2C address of the MPU6050 is 0x68.
 ## 3. Usage
 ### 1. Initialization
 To initialize the MPU6050 sensor, call the mpu6050_init() function. This function configures the I2C interface and wakes up the sensor.
