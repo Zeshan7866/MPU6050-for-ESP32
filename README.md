@@ -16,7 +16,7 @@ This library provides functions to interface with the MPU6050 sensor using an ES
 ## 1. Installation
 Clone the repository to your ESP32 project directory:
 ```
-git clone https://github.com/yourusername/MPU6050-ESP32.git
+git clone https://github.com/Zeshan7866/MPU6050-for-ESP32.git
 ```
 Include the library in your project by adding the following lines to your CMakeLists.txt or component.mk file:
 ```
