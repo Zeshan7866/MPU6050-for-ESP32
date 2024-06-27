@@ -9,7 +9,7 @@ This library provides functions to interface with the MPU6050 sensor using an ES
  - Calculating Orientation
  - Functions
  - Example
-8. License
+3. License
 
 
 ## 1. Installation
@@ -22,7 +22,7 @@ Include the library in your project by adding the following lines to your CMakeL
 set(EXTRA_COMPONENT_DIRS "/path/to/MPU6050-ESP32")
 ```
 ## 2. Usage
-1. Initialization
+### 1. Initialization
 To initialize the MPU6050 sensor, call the mpu6050_init() function. This function configures the I2C interface and wakes up the sensor.
 ```
 #include "mpu6050.h"
@@ -35,7 +35,7 @@ void app_main(void) {
     }
 }
 ```
-2. Reading Sensor Data
+### 2. Reading Sensor Data
 You can read accelerometer and gyroscope data using the `mpu6050_read_accel()` and `mpu6050_read_gyro()` functions, respectively.
 ```
 float ax, ay, az, gx, gy, gz;
@@ -54,7 +54,7 @@ if (ret == ESP_OK) {
     ESP_LOGE("APP", "Failed to read gyroscope data");
 }
 ```
-3. Calculating Orientation
+### 3. Calculating Orientation
 The library provides functions to calculate roll and pitch angles from accelerometer data and to convert quaternions to Euler angles.
 ```
 float roll = calculate_roll(ax, ay, az);
@@ -79,7 +79,7 @@ void quaternion_to_euler(Quaternion q, float *roll, float *pitch, float *yaw);
 void update_quaternion(float gx, float gy, float gz, float dt, Quaternion *q);
 
 ```
-4. Example
+### 4. Example
 ```
 #include <stdio.h>
 #include "mpu6050.h"
