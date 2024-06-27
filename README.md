@@ -147,3 +147,6 @@ void app_main(void) {
 ```
 
 ## 4. Demo Video
+
+[Watch the video](https://www.loom.com/share/be3c0a4d6e204881b2f0ee6edb626746?sid=55102f28-1c8d-4558-9639-90e6e8658ce2)
+
