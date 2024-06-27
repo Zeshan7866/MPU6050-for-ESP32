@@ -4,11 +4,11 @@ This library provides functions to interface with the MPU6050 sensor using an ES
 ## Table of Contents
 1. Installation
 2. Usage
- _ Initialization
- _ Reading Sensor Data
- _ Calculating Orientation
- _ Functions
- _ Example
+ - Initialization
+ - Reading Sensor Data
+ - Calculating Orientation
+ - Functions
+ - Example
 8. License
 
 
