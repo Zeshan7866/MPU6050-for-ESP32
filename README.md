@@ -3,7 +3,8 @@ This library provides functions to interface with the MPU6050 sensor using an ES
 
 ## Table of Contents
 1. Installation
-2. Usage
+2. Hardware Setup
+3. Usage
  - Initialization
  - Reading Sensor Data
  - Calculating Orientation
@@ -21,7 +22,18 @@ Include the library in your project by adding the following lines to your CMakeL
 ```
 set(EXTRA_COMPONENT_DIRS "/path/to/MPU6050-ESP32")
 ```
-## 2. Usage
+## 2. Hardware Setup
+### 1. Connect the MPU6050 to the ESP32:
+ - MPU6050 VCC to ESP32 3.3V
+ - MPU6050 GND to ESP32 GND
+ - MPU6050 SCL to ESP32 GPIO 22
+ - MPU6050 SDA to ESP32 GPIO 21
+
+### 2. Diagram
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]([https://myoctocat.com/assets/images/base-octocat.svg](https://www.google.com/url?sa=i&url=https%3A%2F%2Frandomnerdtutorials.com%2Fesp32-mpu-6050-accelerometer-gyroscope-arduino%2F&psig=AOvVaw3qSLv-VDD8H30HJpGwq9pe&ust=1719559792264000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMj7nseh-4YDFQAAAAAdAAAAABAJ))
+ 
+## 3. Usage
 ### 1. Initialization
 To initialize the MPU6050 sensor, call the mpu6050_init() function. This function configures the I2C interface and wakes up the sensor.
 ```
