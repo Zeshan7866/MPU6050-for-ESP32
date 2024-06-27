@@ -141,8 +141,9 @@ void app_main(void) {
 
         vTaskDelay(500 / portTICK_PERIOD_MS);
         printf("\n");
-## 4. Demo Video
+
     }
 }
 ```
 
+## 4. Demo Video
