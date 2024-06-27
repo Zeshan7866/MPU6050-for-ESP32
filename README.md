@@ -12,7 +12,8 @@ This library provides functions to interface with the MPU6050 sensor using an ES
 8. License
 9. Installation
 
-## Clone the repository to your ESP32 project directory:
+## 1. Installation
+Clone the repository to your ESP32 project directory:
 ```
 git clone https://github.com/yourusername/MPU6050-ESP32.git
 ```
@@ -20,12 +21,10 @@ Include the library in your project by adding the following lines to your CMakeL
 ```
 set(EXTRA_COMPONENT_DIRS "/path/to/MPU6050-ESP32")
 ```
-Usage
-Initialization
+## 2. Usage
+1. Initialization
 To initialize the MPU6050 sensor, call the mpu6050_init() function. This function configures the I2C interface and wakes up the sensor.
-
-c
-Copy code
+```
 #include "mpu6050.h"
 
 void app_main(void) {
@@ -35,11 +34,10 @@ void app_main(void) {
         return;
     }
 }
-Reading Sensor Data
-You can read accelerometer and gyroscope data using the mpu6050_read_accel() and mpu6050_read_gyro() functions, respectively.
-
-c
-Copy code
+```
+2. Reading Sensor Data
+You can read accelerometer and gyroscope data using the `mpu6050_read_accel()` and `mpu6050_read_gyro()` functions, respectively.
+```
 float ax, ay, az, gx, gy, gz;
 
 esp_err_t ret = mpu6050_read_accel(&ax, &ay, &az);
@@ -55,11 +53,10 @@ if (ret == ESP_OK) {
 } else {
     ESP_LOGE("APP", "Failed to read gyroscope data");
 }
-Calculating Orientation
+```
+3. Calculating Orientation
 The library provides functions to calculate roll and pitch angles from accelerometer data and to convert quaternions to Euler angles.
-
-c
-Copy code
+```
 float roll = calculate_roll(ax, ay, az);
 float pitch = calculate_pitch(ax, ay, az);
 
@@ -80,9 +77,10 @@ float calculate_roll(float ax, float ay, float az);
 float calculate_pitch(float ax, float ay, float az);
 void quaternion_to_euler(Quaternion q, float *roll, float *pitch, float *yaw);
 void update_quaternion(float gx, float gy, float gz, float dt, Quaternion *q);
-Example
-c
-Copy code
+
+```
+4. Example
+```
 #include <stdio.h>
 #include "mpu6050.h"
 #include "esp_log.h"
@@ -130,5 +128,6 @@ void app_main(void) {
         printf("\n");
     }
 }
+```
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
