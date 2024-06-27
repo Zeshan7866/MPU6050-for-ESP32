@@ -31,7 +31,7 @@ set(EXTRA_COMPONENT_DIRS "/path/to/MPU6050-ESP32")
 
 ### 2. Diagram
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]([https://myoctocat.com/assets/images/base-octocat.svg](https://www.google.com/url?sa=i&url=https%3A%2F%2Frandomnerdtutorials.com%2Fesp32-mpu-6050-accelerometer-gyroscope-arduino%2F&psig=AOvVaw3qSLv-VDD8H30HJpGwq9pe&ust=1719559792264000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMj7nseh-4YDFQAAAAAdAAAAABAJ))
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2020/12/MPU6050_ESP32_Wiring-Schematic-Diagram.png?w=726&quality=100&strip=all&ssl=1))
  
 ## 3. Usage
 ### 1. Initialization
