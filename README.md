@@ -1,4 +1,4 @@
-#**MPU6050 Library for ESP32**
+# **MPU6050 Library for ESP32**
 This library provides functions to interface with the MPU6050 sensor using an ESP32 microcontroller. The MPU6050 sensor is a six-axis MotionTracking device that combines a 3-axis gyroscope and a 3-axis accelerometer. This library supports reading accelerometer and gyroscope data, as well as calculating orientation using quaternions and Euler angles.
 
 Table of Contents
