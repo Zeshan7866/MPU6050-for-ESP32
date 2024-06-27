@@ -1,26 +1,25 @@
 # **MPU6050 Library for ESP32**
 This library provides functions to interface with the MPU6050 sensor using an ESP32 microcontroller. The MPU6050 sensor is a six-axis MotionTracking device that combines a 3-axis gyroscope and a 3-axis accelerometer. This library supports reading accelerometer and gyroscope data, as well as calculating orientation using quaternions and Euler angles.
 
-Table of Contents
-Installation
-Usage
-Initialization
-Reading Sensor Data
-Calculating Orientation
-Functions
-Example
-License
-Installation
-Clone the repository to your ESP32 project directory:
+## Table of Contents
+1. Installation
+2. Usage
+3. Initialization
+4. eading Sensor Data
+5. Calculating Orientation
+6. Functions
+7. Example
+8. License
+9. Installation
 
-bash
-Copy code
+## Clone the repository to your ESP32 project directory:
+```
 git clone https://github.com/yourusername/MPU6050-ESP32.git
+```
 Include the library in your project by adding the following lines to your CMakeLists.txt or component.mk file:
-
-cmake
-Copy code
+```
 set(EXTRA_COMPONENT_DIRS "/path/to/MPU6050-ESP32")
+```
 Usage
 Initialization
 To initialize the MPU6050 sensor, call the mpu6050_init() function. This function configures the I2C interface and wakes up the sensor.
