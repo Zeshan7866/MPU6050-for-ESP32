@@ -4,13 +4,13 @@ This library provides functions to interface with the MPU6050 sensor using an ES
 ## Table of Contents
 1. Installation
 2. Usage
-3. Initialization
-4. eading Sensor Data
-5. Calculating Orientation
-6. Functions
-7. Example
+ _ Initialization
+ _ Reading Sensor Data
+ _ Calculating Orientation
+ _ Functions
+ _ Example
 8. License
-9. Installation
+
 
 ## 1. Installation
 Clone the repository to your ESP32 project directory:
