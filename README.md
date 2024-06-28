@@ -95,6 +95,7 @@ void update_quaternion(float gx, float gy, float gz, float dt, Quaternion *q);
 
 ```
 ### 4. Example
+In order to use this example with the given CMakeLists file, paste it into the main.c file within the main folder.
 ```
 #include <stdio.h>
 #include "mpu6050.h"
