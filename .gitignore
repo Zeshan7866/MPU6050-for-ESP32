@@ -1,3 +1,9 @@
+# Ignore build directory
+build/
+
+# Ignore managed_components directory
+managed_components/
+
 # Object files #
 *.o
 *.ko
