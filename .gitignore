@@ -4,6 +4,11 @@ build/
 # Ignore managed_components directory
 managed_components/
 
+# Ignore sdkconfig file
+sdkconfig
+sdkconfig.old
+sdkconfig.*.bak
+
 # Object files #
 *.o
 *.ko
